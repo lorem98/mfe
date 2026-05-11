@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth — Dev Isolation</title>
+  </head>
+  <body>
+    <!--
+      In production the auth MFE is embedded inside the container; it never
+      serves this HTML file directly.  This file is only used when the auth
+      package is run in isolation (npm start inside packages/auth) so
+      developers can work on the auth UI without starting every other app.
+    -->
+    <div id="_auth-dev-root"></div>
+  </body>
+</html>
